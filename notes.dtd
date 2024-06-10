@@ -1,0 +1,15 @@
+<!ELEMENT notes (cours+)>
+<!ELEMENT cours ((partiel|final|tp)+)>
+<!ELEMENT partiel (etudiant*)>
+<!ELEMENT final (etudiant*)>
+<!ELEMENT tp (etudiant*)>
+<!ELEMENT etudiant (#PCDATA)>
+
+<!ATTLIST cours
+        nom CDATA #REQUIRED
+        code CDATA #REQUIRED>
+<!ATTLIST partiel coefficient CDATA #IMPLIED>
+<!ATTLIST final coefficient CDATA #IMPLIED>
+<!ATTLIST tp coefficient CDATA #IMPLIED>
+<!ATTLIST etudiant numero CDATA #REQUIRED>
+
