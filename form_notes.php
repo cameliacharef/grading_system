@@ -1,6 +1,6 @@
 <?php
 
-include '../../../TM/2/debut_html.php';
+include 'debut_html.php';
 include 'sax_notes.php';
 include 'authentifie.php';
 include 'affiche_notes.php';
