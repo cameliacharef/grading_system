@@ -3,8 +3,8 @@ header('Content-Type: text/plain');
 if (!isset($_POST['cours'])) {
     echo "<label>Choisissez un cours</label>";
 } else {
-    include '../../../TD/2/tableau_en_table.php';
-    include '../../../TM/3/tableau_en_select.php';
+    include 'tableau_en_table.php';
+    include 'tableau_en_select.php';
     include 'sax_notes.php';
     $notes = phraser("notes.xml", new sax_notes);
     $cours = $_POST['cours'];
